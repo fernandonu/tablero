@@ -1,0 +1,280 @@
+﻿/* Component containers
+----------------------------------*/
+* 	
+{   margin:0;
+    padding:0;
+    }
+body 
+{   height:100%;
+    font-family:Arial;
+    font-size:9pt;
+    }
+#maincontainer
+{   position: absolute;
+	top:50%;
+	left:50%;
+	width:960px;
+	margin-left:-480px;
+	height:550px;
+	margin-top:-275px;
+    }
+#mainmenu
+{	width:180px;
+	height:100%;
+	float:left;
+	background-color:#eee;
+    }
+#content
+{	width:640px;
+	height:90%;
+	float:left;
+	padding:10px;
+	color:#444;
+    }
+#content.nooptions
+{	width:760px;
+    }
+#options
+{   width:120px;
+	height:100%;
+	float:left;
+	background-color:#eee;
+    }
+    
+/* Vertical menu
+----------------------------------*/
+.logo
+{   margin-top:20px;
+    margin-left:10px;
+    }  
+#menuv 
+{   border: 1px solid #dddddd;
+    border-width: 1px 1px 0 1px;
+    width: 150px;
+    margin-top:20px;
+    margin-left:10px;
+    }
+#menuv ul, li 
+{   list-style-type: none;
+    }
+#menuv ul 
+{   margin: 0;
+    padding: 0;
+    }   
+#menuv li 
+{   border-bottom: 1px solid #dddddd;
+    }
+#menuv a 
+{   text-decoration: none;
+    color: #0073EA;
+    background: #F6F6F6;
+    display: block;
+    padding: 3px 6px;
+    width: 138px;
+    }
+#menuv a:hover 
+{   background: #0073EA;
+    color:#ffffff;
+    }
+    
+/* Menu Secundario
+----------------------------------*/
+#menus
+{   border: 1px solid #dddddd;
+    border-width: 1px 1px 0 1px;
+    width: 150px;
+    margin-top:20px;
+    margin-left:10px;
+    }
+#menus ul, li 
+{   list-style-type: none;
+    }
+#menus ul 
+{   margin: 0;
+    padding: 0;
+    }   
+#menus li 
+{   border-bottom: 1px solid #dddddd;
+    }
+#menus a 
+{   text-decoration: none;
+    color: #0073EA;
+    background: #F6F6F6;
+    display: block;
+    padding: 3px 6px;
+    width: 138px;
+    }
+#menus a:hover 
+{   background: #0073EA;
+    color:#ffffff;
+    }
+    
+    
+/* Content elements
+----------------------------------*/
+#content .maintitle
+{   font-size:14pt;
+    color:#444;
+    padding-top:10px;
+    }
+#content .subtitle1
+{   font-size:10pt;
+    color:#999;
+    padding-bottom:10px;
+    }
+#content .search
+{   padding-bottom:5px;
+    }
+#content .label
+{   font-size:12pt;
+    font-style:italic;
+    color:#999;
+    padding-bottom:10px;
+    }
+#content .txtbox
+{   font-size:14pt;
+    color:White;
+    background-color:Black;
+    }
+
+/* Option Elements
+----------------------------------*/
+#options .button 
+{   width:100px;
+    margin:0 0 2px 10px;
+    text-align:left;
+    padding:2px;
+    }
+#options .first
+{   margin-top:80px;
+    }
+    
+#options .maintitle
+{   font-size:12pt;
+    font-style:italic;
+    color:#999;
+    padding-bottom:10px;
+    padding-top:10px;
+    }
+#options .subtitle
+{   font-size:10pt;
+    color:#444;
+    padding-top:10px;
+    }
+#options ul 
+{   margin:35px 0 2px 10px;
+    padding: 0;
+    }   
+#options li 
+{   border-bottom: 1px solid #dddddd;
+    }
+.temporizador
+{   
+    padding-top:75px;
+    padding-left:75px;
+    }  
+.medios
+{   position:relative;
+        width: 300px;
+        height:275px;
+        margin-top:20px;
+    left:10px;
+    top: 20px;
+}
+.medios2
+{   position:relative;
+        width: 275px;
+        height:275px;
+        margin-top:20px;
+    left:320px;
+    top: -300px;
+    }
+.label
+{   font-size:7pt;
+    color:#444;
+    padding-top:10px;
+    border-bottom-style:none;
+    border-left-style:none;
+    border-right-style:none;
+    border-top-style:none;
+    width:225px;
+    }
+/* Chart Layout
+----------------------------------*/
+#form1 { width:760px; height:530px; }
+#cuie, #vernodo, #nombre { display:none; }
+
+.tree
+{   width:280px;
+    padding-right:20px;
+    height:100%;
+    float:left;
+    }
+.chart
+{   width:460px;
+    float:left;
+    }
+.chartarea
+{   margin-top:20px;
+    width:460px;
+    float:left;
+    overflow:hidden !important;
+    background-color:lime;
+    }
+.hidetitle
+{   margin-top:-20px !important;
+    }
+.chartarea1
+{   margin-top:20px;
+    width:275px;
+    float:left;
+    overflow:hidden !important;
+    background-color:lime;
+    }
+.hidetitle1
+{   margin-top:-5px !important;
+    }
+/* reportes */
+#reportes
+{   padding:10px;
+    }
+#reportes .title
+{   font-size:11pt;
+    padding-bottom:5px;
+    padding-top:25px;
+    padding-left:10px;
+    }
+#reportes .subtitle
+{   font-size:10pt;
+    padding-bottom:5px;
+    padding-top:10px;
+    padding-left:10px;
+    }   
+#reportes ul
+{   font-size:10pt;
+    padding: 0 20px 10px 20px;
+    margin:0px;
+    }
+#reportes li
+{   list-style: none;
+    display:block;
+	background-image: url(img/hoja.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	border-bottom:dotted 1px gray;
+    }
+#reportes li:hover
+{   border-bottom-color:Orange;
+    border-bottom-style:solid;
+    }
+#reportes li a
+{   font-size:10pt;
+    color:Gray;
+    text-decoration:none;
+    }
+#reportes li a:hover
+{   color:Black;
+    }
+    
+#ui-datepicker-div { z-index:100; }
