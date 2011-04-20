@@ -1,0 +1,142 @@
+﻿body 
+{	margin:0;
+	padding:0;
+	text-align:center;
+	background-color:#DCDCDC;
+    height:100%;
+    font-family:Microsoft Sans Serif;
+    }
+p 
+{   margin:0;
+    padding:0;
+    }
+#maincontainer
+{   position: absolute;
+	top:50%;
+	left:50%;
+	width:446px;
+	margin-left:-223px;
+	height:362px;
+	margin-top:-181px;
+	background-color:#FFF;
+	text-align:left;
+    }
+#mainmid
+{   height:11px;/* +5px(padding-top) = 36px */
+    width:286px;/* +160px(padding-left) = 446px */
+    position:absolute;
+    top:298px;
+    background-color:#FFA500;
+    border-top-width:4px;
+    border-top-color:#FFF;
+    border-top-style:solid;
+    padding-left:160px;
+    padding-top:5px;
+    text-align:left;
+    }
+#maindown
+{   height:40px;
+    width:286px;/* +160px = 446px */
+    position:absolute;
+    top:318px;
+    background-color:#4169E1;
+    padding-left:160px;
+    padding-top:5px;
+    text-align:left;
+    }
+#somizq
+{   height:372px;
+    width:5px;
+    position:absolute;
+    left:-5px;
+    top:-5px;
+    background-image:url(img/somizq.png);
+    }    
+#somarr
+{   height:5px;
+    width:446px;
+    position:absolute;
+    top:-5px;
+    background-image:url(img/somarr.png);
+    }
+#somaba
+{   height:5px;
+    width:446px;
+    position:absolute;
+    bottom:-5px;
+    background-image:url(img/somaba.png);
+    }
+#somder
+{   height:372px;
+    width:5px;
+    position:absolute;
+    right:-5px;
+    top:-5px;
+    background-image:url(img/somder.png);
+    }
+#isotipo
+{   position:absolute;
+    top:50px;
+    left:18px;
+    z-index:100;
+    }
+#iniciar
+{   position:absolute;
+    top:270px;
+    left:210px;
+    z-index:100;
+    }
+#cinta
+{   position:absolute;
+    top:26px;
+    left:-26px;
+    z-index:100;
+    }
+#legislatura
+{   position:absolute;
+    top:-20px;
+    }
+#formlogin
+{   width:260px;
+    height:225px;
+    position:absolute;
+    top:30px;
+    left:170px;
+    }
+.label
+{   padding-top:15px;
+    font-family:Microsoft Sans Serif;
+    font-size:10pt;
+    }
+.input
+{   width:200px;
+    margin-top:5px;
+    font-family:Microsoft Sans Serif;
+    font-size:10pt;
+    }
+.input:focus
+{   border:solid 2px Black;
+    }
+.button
+{   width:80px;
+    height:22px;
+    margin-top:20px;
+    border:none;
+    background-color:#D0D0D0;
+    font-family:Microsoft Sans Serif;
+    font-size:10pt;
+    text-align:left;
+    }
+.button:hover
+{   background-color:#FFD700;
+    }
+.button:focus
+{   background-color:#FF8C00;
+    }
+    
+.errormsj
+{   margin-top:20px;
+    font-family:Arial;
+    font-size:10pt;
+    color:Red;
+    }

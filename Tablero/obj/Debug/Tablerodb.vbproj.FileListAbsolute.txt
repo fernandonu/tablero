@@ -1,0 +1,12 @@
+C:\tablero\Tablero\bin\Renacer.dll
+C:\tablero\Tablero\bin\Renacer.pdb
+C:\tablero\Tablero\bin\Renacer.xml
+C:\tablero\Tablero\bin\TCFlash.pdb
+C:\tablero\Tablero\bin\TCFlash.xml
+C:\tablero\Tablero\obj\Debug\ResolveAssemblyReference.cache
+C:\tablero\Tablero\obj\Debug\Renacer.Resources.resources
+C:\tablero\Tablero\obj\Debug\GenerateResource.read.1.tlog
+C:\tablero\Tablero\obj\Debug\GenerateResource.write.1.tlog
+C:\tablero\Tablero\obj\Debug\Renacer.dll
+C:\tablero\Tablero\obj\Debug\Renacer.xml
+C:\tablero\Tablero\obj\Debug\Renacer.pdb

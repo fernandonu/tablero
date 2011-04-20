@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1EB41F3-36A5-46D6-B2AA-1394A6B49F56}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Renacer</RootNamespace>
+    <AssemblyName>Renacer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Renacer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Renacer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FusionCharts, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TCFlash\TCFlash\bin\FusionCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TCFlash, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TCFlash\TCFlash\bin\TCFlash.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions" />
+    <Import Include="CrystalDecisions.CrystalReports" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine.Migration" />
+    <Import Include="CrystalDecisions.Enterprise" />
+    <Import Include="CrystalDecisions.Reporting" />
+    <Import Include="CrystalDecisions.Reporting.WebControls" />
+    <Import Include="CrystalDecisions.ReportSource" />
+    <Import Include="CrystalDecisions.Shared" />
+    <Import Include="CrystalDecisions.Shared.Interop" />
+    <Import Include="CrystalDecisions.Web" />
+    <Import Include="CrystalDecisions.Web.Design" />
+    <Import Include="CrystalDecisions.Web.HtmlReportRender" />
+    <Import Include="CrystalDecisions.Web.Services" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\FactoryDB.mdb">
+    </Content>
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="js\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="js\ui\i18n\ui.datepicker-es.js" />
+    <Content Include="js\ui\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="usuarios\users.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administrar.aspx.designer.vb">
+      <DependentUpon>administrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrar.aspx.vb">
+      <DependentUpon>administrar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="beneficiarios.aspx.designer.vb">
+      <DependentUpon>beneficiarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="beneficiarios.aspx.vb">
+      <DependentUpon>beneficiarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="class\Indicador.vb" />
+    <Compile Include="class\Usuario.vb" />
+    <Compile Include="control\wsMetas.asmx.vb">
+      <DependentUpon>wsMetas.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvArbol.aspx.designer.vb">
+      <DependentUpon>srvArbol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvArbol.aspx.vb">
+      <DependentUpon>srvArbol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvBeneficiarios.aspx.designer.vb">
+      <DependentUpon>srvBeneficiarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvBeneficiarios.aspx.vb">
+      <DependentUpon>srvBeneficiarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvCargaDiaria.aspx.designer.vb">
+      <DependentUpon>srvCargaDiaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvCargaDiaria.aspx.vb">
+      <DependentUpon>srvCargaDiaria.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvCargados.aspx.designer.vb">
+      <DependentUpon>srvCargados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvCargados.aspx.vb">
+      <DependentUpon>srvCargados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvDatosEfector.aspx.designer.vb">
+      <DependentUpon>srvDatosEfector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvDatosEfector.aspx.vb">
+      <DependentUpon>srvDatosEfector.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvEfectores.aspx.designer.vb">
+      <DependentUpon>srvEfectores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvEfectores.aspx.vb">
+      <DependentUpon>srvEfectores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvExpedientes.aspx.designer.vb">
+      <DependentUpon>srvExpedientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvExpedientes.aspx.vb">
+      <DependentUpon>srvExpedientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvIndicadores.aspx.designer.vb">
+      <DependentUpon>srvIndicadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvIndicadores.aspx.vb">
+      <DependentUpon>srvIndicadores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvIndicadoresF.aspx.designer.vb">
+      <DependentUpon>srvIndicadoresF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvIndicadoresF.aspx.vb">
+      <DependentUpon>srvIndicadoresF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvNomenclador.aspx.designer.vb">
+      <DependentUpon>srvNomenclador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvNomenclador.aspx.vb">
+      <DependentUpon>srvNomenclador.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvPeriodo.aspx.designer.vb">
+      <DependentUpon>srvPeriodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvPeriodo.aspx.vb">
+      <DependentUpon>srvPeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvPracticasHabilitadas.aspx.designer.vb">
+      <DependentUpon>srvPracticasHabilitadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvPracticasHabilitadas.aspx.vb">
+      <DependentUpon>srvPracticasHabilitadas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvRecibidos.aspx.designer.vb">
+      <DependentUpon>srvRecibidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvRecibidos.aspx.vb">
+      <DependentUpon>srvRecibidos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dataservices\srvTermometro.aspx.designer.vb">
+      <DependentUpon>srvTermometro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataservices\srvTermometro.aspx.vb">
+      <DependentUpon>srvTermometro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="datosefector.aspx.designer.vb">
+      <DependentUpon>datosefector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datosefector.aspx.vb">
+      <DependentUpon>datosefector.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="detalle.aspx.designer.vb">
+      <DependentUpon>detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detalle.aspx.vb">
+      <DependentUpon>detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="efector.aspx.designer.vb">
+      <DependentUpon>efector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="efector.aspx.vb">
+      <DependentUpon>efector.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="facturacion.aspx.designer.vb">
+      <DependentUpon>facturacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="facturacion.aspx.vb">
+      <DependentUpon>facturacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="indicadores.aspx.designer.vb">
+      <DependentUpon>indicadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indicadores.aspx.vb">
+      <DependentUpon>indicadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitor.aspx.designer.vb">
+      <DependentUpon>monitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitor.aspx.vb">
+      <DependentUpon>monitor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="nomenclador.aspx.designer.vb">
+      <DependentUpon>nomenclador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nomenclador.aspx.vb">
+      <DependentUpon>nomenclador.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reports.aspx.designer.vb">
+      <DependentUpon>reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports.aspx.vb">
+      <DependentUpon>reports.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reports\crystal.aspx.designer.vb">
+      <DependentUpon>crystal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\crystal.aspx.vb">
+      <DependentUpon>crystal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reports\detalle de carga ipos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>detalle de carga ipos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\Embarazadas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Embarazadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\eVOLUCION DE BENEFICIARIOS por cap.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eVOLUCION DE BENEFICIARIOS por cap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\Facturacion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Facturacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\Indicadores por Efector.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Indicadores por Efector.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\Padron Activos con B recategorizado.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Padron Activos con B recategorizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\porcentaje de controles por efectorl.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>porcentaje de controles por efectorl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\Prestaciones X Efector.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prestaciones X Efector.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\Ranking Completo Zonas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ranking Completo Zonas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\Ranking Completo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ranking Completo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usuarios\users.aspx.designer.vb">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios\users.aspx.vb">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\detalle de carga ipos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>detalle de carga ipos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Embarazadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Embarazadas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\eVOLUCION DE BENEFICIARIOS por cap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>eVOLUCION DE BENEFICIARIOS por cap.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Facturacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Facturacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Indicadores por Efector.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Indicadores por Efector.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Padron Activos con B recategorizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Padron Activos con B recategorizado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\porcentaje de controles por efectorl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>porcentaje de controles por efectorl.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Prestaciones X Efector.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prestaciones X Efector.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Ranking Completo Zonas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ranking Completo Zonas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Ranking Completo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ranking Completo.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\MS_SQL_Script.sql" />
+    <Content Include="administrar.aspx" />
+    <Content Include="beneficiarios.aspx" />
+    <Content Include="control\wsMetas.asmx" />
+    <Content Include="css\img\ajax-loader.gif" />
+    <Content Include="css\img\ajax-loader1.gif" />
+    <Content Include="css\img\ajax-loader2.gif" />
+    <Content Include="css\img\green2.png" />
+    <Content Include="css\img\green.png" />
+    <Content Include="css\img\iniciar.png" />
+    <Content Include="css\img\orange2.png" />
+    <Content Include="css\img\orange.png" />
+    <Content Include="css\img\red2.png" />
+    <Content Include="css\img\red.png" />
+    <Content Include="css\img\somaba.png" />
+    <Content Include="css\img\somarr.png" />
+    <Content Include="css\img\somder.png" />
+    <Content Include="css\img\somizq.png" />
+    <Content Include="css\img\yellow2.png" />
+    <Content Include="css\img\down.png" />
+    <Content Include="css\img\down1.png" />
+    <Content Include="css\img\eq.png" />
+    <Content Include="css\img\eq1.png" />
+    <Content Include="css\img\logo.png" />
+    <Content Include="css\img\up.png" />
+    <Content Include="css\img\up1.png" />
+    <Content Include="css\img\yellow.png" />
+    <Content Include="css\login.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\themes\flickr\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\themes\flickr\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="css\themes\flickr\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="css\themes\flickr\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\themes\flickr\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\themes\flickr\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="css\themes\flickr\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="css\themes\flickr\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="css\themes\flickr\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="css\themes\flickr\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\themes\flickr\images\ui-icons_666666_256x240.png" />
+    <Content Include="css\themes\flickr\images\ui-icons_ffa900_256x240.png" />
+    <Content Include="css\themes\flickr\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\themes\flickr\jquery-ui-1.7.2.custom.css" />
+    <Content Include="css\ui.jqgrid.css" />
+    <Content Include="dataservices\srvArbol.aspx" />
+    <Content Include="dataservices\srvBeneficiarios.aspx" />
+    <Content Include="dataservices\srvCargaDiaria.aspx" />
+    <Content Include="dataservices\srvCargados.aspx" />
+    <Content Include="dataservices\srvDatosEfector.aspx" />
+    <Content Include="dataservices\srvEfectores.aspx" />
+    <Content Include="dataservices\srvExpedientes.aspx" />
+    <Content Include="dataservices\srvIndicadores.aspx" />
+    <Content Include="dataservices\srvIndicadoresF.aspx" />
+    <Content Include="dataservices\srvNomenclador.aspx" />
+    <Content Include="dataservices\srvPeriodo.aspx" />
+    <Content Include="dataservices\srvPracticasHabilitadas.aspx" />
+    <Content Include="dataservices\srvRecibidos.aspx" />
+    <Content Include="dataservices\srvTermometro.aspx" />
+    <Content Include="datosefector.aspx" />
+    <Content Include="detalle.aspx" />
+    <Content Include="efector.aspx" />
+    <Content Include="facturacion.aspx" />
+    <Content Include="FusionCharts\Area2D.swf" />
+    <Content Include="FusionCharts\Bar2D.swf" />
+    <Content Include="FusionCharts\Bubble.swf" />
+    <Content Include="FusionCharts\Column2D.swf" />
+    <Content Include="FusionCharts\Column3D.swf" />
+    <Content Include="FusionCharts\Doughnut2D.swf" />
+    <Content Include="FusionCharts\Doughnut3D.swf" />
+    <Content Include="FusionCharts\FCExporter.swf" />
+    <Content Include="FusionCharts\HLinearGauge.swf" />
+    <Content Include="FusionCharts\Line.swf" />
+    <Content Include="FusionCharts\MSArea.swf" />
+    <Content Include="FusionCharts\MSBar2D.swf" />
+    <Content Include="FusionCharts\MSBar3D.swf" />
+    <Content Include="FusionCharts\MSColumn2D.swf" />
+    <Content Include="FusionCharts\MSColumn3D.swf" />
+    <Content Include="FusionCharts\MSColumn3DLineDY.swf" />
+    <Content Include="FusionCharts\MSColumnLine3D.swf" />
+    <Content Include="FusionCharts\MSCombi2D.swf" />
+    <Content Include="FusionCharts\MSCombi3D.swf" />
+    <Content Include="FusionCharts\MSCombiDY2D.swf" />
+    <Content Include="FusionCharts\MSLine.swf" />
+    <Content Include="FusionCharts\MSStackedColumn2D.swf" />
+    <Content Include="FusionCharts\MSStackedColumn2DLineDY.swf" />
+    <Content Include="FusionCharts\Pie2D.swf" />
+    <Content Include="FusionCharts\Pie3D.swf" />
+    <Content Include="FusionCharts\Scatter.swf" />
+    <Content Include="FusionCharts\ScrollArea2D.swf" />
+    <Content Include="FusionCharts\ScrollColumn2D.swf" />
+    <Content Include="FusionCharts\ScrollCombi2D.swf" />
+    <Content Include="FusionCharts\ScrollCombiDY2D.swf" />
+    <Content Include="FusionCharts\ScrollLine2D.swf" />
+    <Content Include="FusionCharts\ScrollStackedColumn2D.swf" />
+    <Content Include="FusionCharts\SSGrid.swf" />
+    <Content Include="FusionCharts\StackedArea2D.swf" />
+    <Content Include="FusionCharts\StackedBar2D.swf" />
+    <Content Include="FusionCharts\StackedBar3D.swf" />
+    <Content Include="FusionCharts\StackedColumn2D.swf" />
+    <Content Include="FusionCharts\StackedColumn3D.swf" />
+    <Content Include="FusionCharts\StackedColumn3DLineDY.swf" />
+    <Content Include="FusionWidgets\Charts\AngularGauge.swf" />
+    <Content Include="FusionWidgets\Charts\Bulb.swf" />
+    <Content Include="FusionWidgets\Charts\Cylinder.swf" />
+    <Content Include="FusionWidgets\Charts\DrawingPad.swf" />
+    <Content Include="FusionWidgets\Charts\FCExporter.swf" />
+    <Content Include="FusionWidgets\Charts\Funnel.swf" />
+    <Content Include="FusionWidgets\Charts\Gantt.swf" />
+    <Content Include="FusionWidgets\Charts\HBullet.swf" />
+    <Content Include="FusionWidgets\Charts\HLED.swf" />
+    <Content Include="FusionWidgets\Charts\HLinearGauge.swf" />
+    <Content Include="FusionWidgets\Charts\Pyramid.swf" />
+    <Content Include="FusionWidgets\Charts\RealTimeArea.swf" />
+    <Content Include="FusionWidgets\Charts\RealTimeColumn.swf" />
+    <Content Include="FusionWidgets\Charts\RealTimeLine.swf" />
+    <Content Include="FusionWidgets\Charts\RealTimeLineDY.swf" />
+    <Content Include="FusionWidgets\Charts\RealTimeStackedArea.swf" />
+    <Content Include="FusionWidgets\Charts\RealTimeStackedColumn.swf" />
+    <Content Include="FusionWidgets\Charts\SparkColumn.swf" />
+    <Content Include="FusionWidgets\Charts\SparkLine.swf" />
+    <Content Include="FusionWidgets\Charts\SparkWinLoss.swf" />
+    <Content Include="FusionWidgets\Charts\Thermometer.swf" />
+    <Content Include="FusionWidgets\Charts\VBullet.swf" />
+    <Content Include="FusionWidgets\Charts\VLED.swf" />
+    <Content Include="includes\DBConn.asp" />
+    <Content Include="includes\FusionCharts.asp" />
+    <Content Include="includes\FusionCharts_Gen.asp" />
+    <Content Include="indicadores.aspx" />
+    <Content Include="js\administracion.js" />
+    <Content Include="js\arbol.js" />
+    <Content Include="js\beneficiarios.js" />
+    <Content Include="js\Commented\FusionChartsExportComponent.js" />
+    <Content Include="js\datosefector.js" />
+    <Content Include="js\efectores.js" />
+    <Content Include="js\facturacion.js" />
+    <Content Include="js\FusionCharts.js" />
+    <Content Include="js\FusionChartsExportComponent.js" />
+    <Content Include="js\grid.treegrid-min.js" />
+    <Content Include="js\i18n\grid.locale-sp.js" />
+    <Content Include="js\indicadores.js" />
+    <Content Include="js\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="js\jquery.jqGrid.min.js" />
+    <Content Include="js\monitor.js" />
+    <Content Include="js\nomenclador.js" />
+    <Content Include="js\reportes.js" />
+    <Content Include="login.aspx" />
+    <Content Include="monitor.aspx" />
+    <Content Include="nomenclador.aspx" />
+    <Content Include="reports.aspx" />
+    <Content Include="reports\crystal.aspx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1068</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
