@@ -117,7 +117,9 @@
     <Content Include="js\ui\i18n\ui.datepicker-es.js" />
     <Content Include="js\ui\jquery-ui-1.7.2.custom.min.js" />
     <Content Include="usuarios\users.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="administrar.aspx.designer.vb">
